@@ -31,7 +31,10 @@ const isExternal = !!project.data.redirect;
         />
       )
     }
+
     <div class="card-body">
+      {project.data.date && <div class="project-date">{project.data.date}</div>}
+
       <h2 class="card-title">
         <a
           href={href}
@@ -42,7 +45,9 @@ const isExternal = !!project.data.redirect;
           {project.data.title}
         </a>
       </h2>
+
       {project.data.description && <p class="card-text">{project.data.description}</p>}
+
       {
         project.data.github && (
           <div class="row-icons">
@@ -65,6 +70,7 @@ const isExternal = !!project.data.redirect;
                   </svg>
                 </a>
               </div>
+
               {project.data.github_stars && (
                 <span class="stars" title="GitHub Stars" data-tooltip="GitHub Stars">
                   <svg
@@ -151,6 +157,14 @@ const isExternal = !!project.data.redirect;
     flex: 1;
     display: flex;
     flex-direction: column;
+  }
+
+  .project-date {
+    color: var(--global-theme-color);
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
   }
 
   .card-title {

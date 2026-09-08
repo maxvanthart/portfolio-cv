@@ -125,6 +125,9 @@ const projects = defineCollection({
 
     /** Enable Giscus comments on the project page. */
     giscus_comments: z.boolean().optional().default(false),
+
+    /** Date */
+    date: z.string().optional(),
   }),
 });
 
