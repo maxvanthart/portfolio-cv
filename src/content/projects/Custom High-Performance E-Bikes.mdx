@@ -22,6 +22,24 @@ In 2021, I started studying Applied Sciences at TU Delft and needed a bicycle to
 I received an old bicycle from an uncle through my aunt.
 Applied Sciences turned out not to be the right fit for me, so I stopped and took a gap year, leaving me with an extra bicycle sitting in the garage.
 
+<div style="display: flex; gap: 1rem; align-items: stretch; justify-content: center;">
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-youngme.jpeg')}
+      alt="Razer Viper V3 Pro side view"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-youngmeinspectingbike.jpeg')}
+      alt="Razer Viper V3 Pro exploded view"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+</div>
+
 ## Setup 1 - The first step
 
 During that gap year, my younger brother wanted to build an E-bike.
@@ -61,11 +79,40 @@ My first solution was simply not to use too much throttle.
 After searching online, I discovered that my specific display and controller combination had a configurable battery current limit.
 After changing this setting, the problem was resolved.
 
-**********
+<div style="display: flex; gap: 1rem; align-items: stretch; justify-content: center;">
+  <div style="flex: 3; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP2.jpeg')}
+      alt="Young me with a bicycle"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
 
-Photo setup 2
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP2-inspectingbike.jpeg')}
+      alt="Inspecting a bicycle"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
 
-**********
+  <div style="flex: 3; text-align: center;">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px; display: block;"
+    >
+      <source
+        src={withBase('/assets/videos/EBIKE/EBIKE-SETUP2-flyby.mp4')}
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 
 ## Setup 3 - More reliability (and even more power)
 
@@ -81,11 +128,12 @@ I soldered all of the connectors permanently and never experienced vibration-rel
 
 I did not realize it at the time, but learning to solder opened up an entirely new range of possibilities for later projects.
 
-**********
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP3.jpeg')}
+      alt="EBIKE-SETUP3"
+      style="width: 100%; height: 300px; object-fit: cover; border-radius: 6px;"
+    />
 
-Photo setup 3
-
-**********
 
 ## Setup 4 - New frame
 
@@ -108,11 +156,11 @@ These allowed me to securely mount the batteries without drilling additional hol
 For this setup, I also researched battery management systems in more detail.
 I replaced the original BMS units with higher-current models so that the battery packs could safely deliver the full 50 A required by the controller.
 
-**********
-
-Photo setup 4
-
-**********
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP4.jpeg')}
+      alt="EBIKE-SETUP4"
+      style="width: 100%; height: 300px; object-fit: cover; border-radius: 6px;"
+    />
 
 ## Setup 5 - VESC (more power)
 
@@ -149,12 +197,23 @@ I installed Magura MT5 brake calipers, ceramic brake pads, and 203 mm brake roto
 
 This configuration remained reliable for a long period of time.
 
-**********
+<div style="display: flex; gap: 1rem; align-items: stretch; justify-content: center;">
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-84200HP-2000wmotor.jpeg')}
+      alt="Picture of 2000w motor in frame"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
 
-Photo setup 5
-
-**********
-
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-84200HP-magura.jpeg')}
+      alt="Picture new front brake"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+</div>
 #### Custom batteries
 
 To unlock the full potential of the upgraded drivetrain, I needed different battery packs.
@@ -177,11 +236,23 @@ I designed custom internal cell holders for the housings and soldered the BMS wi
 These new batteries unlocked significantly more power while also increasing the available range.
 
 The complete battery system now had an energy capacity of approximately 1340 Wh, a nominal voltage of 72 V, and a maximum continuous current rating of over 150 A.
-**********
+<div style="display: flex; gap: 1rem; align-items: stretch; justify-content: center;">
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP5-custombatteries1.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
 
-Photo setup 5 MKSESC 75200, foto custom batteries.
-
-**********
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP5-custombatteries2.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+</div>
 
 #### 3D-printed PCB
 As the wiring became increasingly complicated and several 3.3 V and 5 V signal conversions were required, I developed a method for producing simple PCBs using a 3D printer.
@@ -200,6 +271,47 @@ This left copper only where the conductive traces were located.
 
 The through-hole components were then inserted and soldered directly onto the remaining copper foil.
 
+<div style="display: flex; gap: 1rem; align-items: stretch; justify-content: center;">
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP5-3dprintedpcb2.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP5-3dprintedpcb3.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+  
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP5-benchsetup.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  
+  </div>  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP5-prototypingboard.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+  
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP5-prototypingboard2.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+</div>
+
 #### Dropout Reinforcement and Torque Management
 For the 75200 controller version, the torque acting on the rear dropouts became so high that the motor axle started to pry the dropouts open.
 As a result, the motor effectively tried to rotate underneath the bicycle frame.
@@ -214,6 +326,12 @@ Second, the plates were additionally secured using bolts that aligned with the o
 
 The correct geometry was first developed through a trial-and-error process using 3D-printed prototypes.
 Once the design had been validated, I had multiple 2 mm stainless-steel plates cut and stacked three plates per side to create the final reinforced dropout interface.
+
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-84200HP-2000wmotor.jpeg')}
+      alt="Picture of dropout reinforcement"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
 
 #### Sensorless FOC limitations
 There was still one major issue.
@@ -238,16 +356,44 @@ The idea was to provide other E-bike builders facing similar packaging constrain
 Sensorless FOC became almost perfect.
 The only remaining issue occurred during the transition from sensored to sensorless FOC at very high motor currents of approximately 250 A.
 
-**********
+<div style="display: flex; gap: 1rem; align-items: stretch; justify-content: center;">
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-84200HP-setup.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
 
-Photos setup 5 MKSESC 84200HP
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-84200HP-setup2.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+</div>
+<ExternalProjectCardGrid>
+  <ExternalProjectCard
+    title="Hailong 1-2 Downtube Base Plate"
+    description="Reverse-engineered base plate for the larger 65-cell Hailong 1-2 downtube battery case, supplied as a STEP file so it can be integrated directly into custom E-bike battery mounts."
+    href="https://cults3d.com/en/3d-model/tool/hailong-1-2-downtube-base-plate-65pcs-18650"
+    img="/assets/img/EBIKE/EBIKE-hailong12.jpeg"
+    imgAlt="Hailong 1-2 downtube battery base plate"
+    imgFit="cover"
+    imgPadding="0rem"
+  />
 
-**********
-**********
-
-Projectcards downtube designs
-
-**********
+  <ExternalProjectCard
+    title="Hailong 1 Downtube Base Plate"
+    description="Reverse-engineered base plate for the 52-cell Hailong 1 downtube battery case, designed as a CAD-ready STEP model for integration into custom mounting solutions."
+    href="https://cults3d.com/en/3d-model/tool/hailong-1-downtube-base-plate-52pcs-18650"
+    img="/assets/img/EBIKE/EBIKE-hailong1.jpeg"
+    imgAlt="Hailong 1 downtube battery base plate"
+    imgFit="cover"
+    imgPadding="0rem"
+  />
+</ExternalProjectCardGrid>
 ## Setup 6 - Hardware changes + RMCore
 
 The 2000 W hub motor used a relatively low winding count.
@@ -266,11 +412,50 @@ The higher motor torque also introduced additional mechanical risks, so I needed
 For this version, I 3D-scanned the rear dropouts with the motor mounted in the frame and used this scan data to design a new set of plates with a much more accurate fit.
 These final torque plates were manufactured from 6 mm stainless steel and provided a significantly stronger and more precise solution for handling the increased motor torque.
 
-**********
+<div style="display: flex; gap: 1rem; align-items: stretch; justify-content: center;">
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP6-3000wmotor.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 300px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
 
-3d modelletjes dropout reinforcement
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP6-3000wunlaced.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 300px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+</div>
 
-**********
+
+<div style="display: flex; gap: 1rem; width: 100%; align-items: stretch;">
+  <div style="flex: 1; min-width: 0;">
+    <ModelViewer
+      src={withBase('/assets/models/Linkerkant3dscan.glb')}
+      alt="First 3D model"
+        shadowIntensity={2}
+        shadowSoftness={0}
+        exposure={0.5}
+        environmentImage="legacy"
+        toneMapping="neutral"
+    />
+  </div>
+
+  <div style="flex: 1; min-width: 0;">
+    <ModelViewer
+      src={withBase('/assets/models/Rechterkant3dscan.glb')}
+      alt="Second 3D model"
+        shadowIntensity={2}
+        shadowSoftness={0}
+        exposure={0.5}
+        environmentImage="legacy"
+        toneMapping="neutral"
+    />
+  </div>
+</div>
 
 I also replaced the headset so that the frame could accept a modern tapered front fork instead of the original straight-steerer design.
 The new air-sprung fork increased the wheelbase, reduced the tendency of the bicycle to pitch forward under hard braking, improved front-end stiffness, and replaced the original quick-release wheel connection with a 15 × 110 mm Boost thru-axle.
@@ -299,11 +484,34 @@ I also 3D scanned and reverse engineered the shell of the downtube batteries.
 I created a complete assembly in Onshape and carefully considered the space required to remove and reinstall the batteries.
 After a considerable amount of design work, I found a configuration in which all of the components fitted together with only a very small amount of clearance.
 
-**********
+<div style="display: flex; gap: 1rem; align-items: stretch; justify-content: center;">
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP6-newmountinghardware.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
 
-Photos setup 6 RMCore + 3D model frame
+  <div style="flex: 1; text-align: center;">
+    <img
+      src={withBase('/assets/img/EBIKE/EBIKE-SETUP6-newmountinghardware2.jpeg')}
+      alt="Picture of custom batterypack"
+      style="width: 100%; height: 220px; object-fit: cover; border-radius: 6px;"
+    />
+  </div>
+</div>
 
-**********
+<ModelViewer
+  src="/assets/models/BikeFrame3Dscan.glb"
+  alt="PijpMaster robot"
+  height="500px"
+  shadowIntensity={2}
+  shadowSoftness={0}
+  exposure={0.5}
+  environmentImage="legacy"
+  toneMapping="neutral"
+/>
 
 ### Direct-drive hub motor encoder integration
 
@@ -347,8 +555,15 @@ The RLS Orbis encoder was connected through the existing Hall sensor wiring and 
 The result is full closed-loop torque control from standstill, providing up to approximately 280 Nm, while the transition to sensorless control at higher speed is now extremely smooth.
 As far as I am aware, I may be one of the first people to integrate this type of high-resolution encoder into a direct-drive E-bike hub motor specifically for closed-loop VESC control.
 
-**********
-
-Photos setup PCB + bench setup + 3D model motor
-
-**********
+<ModelViewer
+  src="/assets/models/Stator3Dscan.glb"
+  alt="PijpMaster robot"
+  height="500px"
+  shadowIntensity={2}
+  shadowSoftness={0}
+  exposure={0.5}
+  environmentImage="legacy"
+  toneMapping="neutral"
+  transparentMaterial={10}
+  transparentAlpha={0.4}
+/>

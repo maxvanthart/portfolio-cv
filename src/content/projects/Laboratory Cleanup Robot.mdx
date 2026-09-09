@@ -3,7 +3,8 @@ title: Mirte MASTER-based Lab Cleanup Robot
 description: Mirte MASTER-based autonomous laboratory cleanup robot made for the mechanical engineering bachelor graduation project.
 importance: 4
 category: Favorites
-img: /assets/img/mirte_scan.png
+img: /assets/img/MIRTEMASTER/mirte_scan.png
+date: '2026'
 ---
 
 import ExternalProjectCard from '@components/ExternalProjectCard.astro';
@@ -39,7 +40,7 @@ The camera was therefore relocated to the end of the robotic arm above the gripp
 This increased the camera height and allowed its viewing angle to be adjusted, significantly improving the quality of the depth information available for the 3D perception pipeline.
 
 <ModelViewer
-  src="/assets/models/MirteMaster3DOptimized.glb"
+  src="/assets/models/MM-Minimal.glb"
   alt="Modified MIRTE Master laboratory cleanup robot"
   height="550px"
   cameraOrbit="30deg 63.14deg"
@@ -52,6 +53,8 @@ This increased the camera height and allowed its viewing angle to be adjusted, s
   autoRotate={false}
   interactionPrompt="none"
   interactionPromptThreshold={15000}
+  transparentMaterial={3}
+  transparentAlpha={0.4}
   hotspots={[
     {
       slot: "hotspot-1",
@@ -216,7 +219,7 @@ Together, the navigation, perception and manipulation systems demonstrated the f
   <ExternalProjectCard
     title="Graduation Project Documentation"
     description="Full project documentation, including system architecture, methodology, experiments, results and PDF-download of the report."
-    img="/assets/img/Mirte2.png"
+    img="/assets/img/MIRTEMASTER/Mirte2.png"
     imgAlt="Lab Cleanup Robot using the MIRTE Master Platform"
     href="https://matt-rbt.github.io/Lab-Cleanup-Robot-using-the-Mirte-Master-Platform/"
   />
@@ -224,7 +227,7 @@ Together, the navigation, perception and manipulation systems demonstrated the f
   <ExternalProjectCard
     title="MIRTE Master Documentation"
     description="Official documentation for the MIRTE Master robotic platform used as the basis for this project."
-    img="/assets/img/MIRTEMasterOriginal.png"
+    img="/assets/img/MIRTEMASTER/MIRTEMasterOriginal.png"
     imgAlt="MIRTE Master robotic platform"
     href="https://docs.mirte.org/develop/doc/robots/mirte_master/index.html"
     imgFit="contain"
@@ -234,7 +237,7 @@ Together, the navigation, perception and manipulation systems demonstrated the f
   <ExternalProjectCard
     title="Interactive CAD Model"
     description="View the complete modified MIRTE Master assembly and mechanical design in Onshape."
-    img="/assets/img/MirteMasterCadTB.png"
+    img="/assets/img/MIRTEMASTER/MirteMasterCadTB.png"
     imgAlt="CAD model of the modified MIRTE Master"
     href="https://cad.onshape.com/documents/ee158bec245e3fe46f63c9ce/w/a0c8c76ba94ff339073118d4/e/a16fbc4a88cf67fd9fba6368"
     imgFit="contain"
