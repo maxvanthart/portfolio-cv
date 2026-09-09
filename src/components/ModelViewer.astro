@@ -50,13 +50,37 @@ const {
   transparentAlpha = 0.4,
 } = Astro.props;
 
+/*
+ * GitHub Pages base path.
+ *
+ * Locally:
+ * /
+ *
+ * GitHub Pages:
+ * /portfolio-cv/
+ */
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
 
+/*
+ * Remove "public/" and leading slashes from normal local paths.
+ */
 const cleanSrc = src.replace(/^\/?public\//, '').replace(/^\//, '');
 
-const modelPath = src.startsWith('http') ? src : `${base}${cleanSrc}`;
+/*
+ * Support:
+ *
+ * /assets/models/model.glb
+ * /portfolio-cv/assets/models/model.glb
+ * https://example.com/model.glb
+ *
+ * This prevents BASE_URL from being added twice.
+ */
+const modelPath =
+  src.startsWith('http://') || src.startsWith('https://') || src.startsWith(base)
+    ? src
+    : `${base}${cleanSrc}`;
 
 const hasHotspots = hotspots.length > 0;
 ---
