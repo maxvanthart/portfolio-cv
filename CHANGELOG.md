@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/maxvanthart/portfolio-cv/compare/v2.0.2...v2.0.3) (2026-09-19)
+
+
+### Miscellaneous
+
+* update citation counts [skip ci] ([21088c4](https://github.com/maxvanthart/portfolio-cv/commit/21088c4890c856097640ea1609a56b78871411b4))
+
 ## [2.0.2](https://github.com/maxvanthart/portfolio-cv/compare/v2.0.1...v2.0.2) (2026-09-06)
 
 ### Miscellaneous
