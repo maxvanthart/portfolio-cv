@@ -4,6 +4,12 @@
 # Counts sourced from OpenAlex (https://openalex.org) — a close approximation
 # to Google Scholar citation counts, updated within days of a new citation.
 #
+<<<<<<< Updated upstream
 # Last updated: 2026-10-11
 # To refresh: yarn citations:update
 qyhmnyLat1gC: 16742
+=======
+# Last updated: 2026-10-13
+# To refresh: yarn citations:update
+qyhmnyLat1gC: 16625
+>>>>>>> Stashed changes
